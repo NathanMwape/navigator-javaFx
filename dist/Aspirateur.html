@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <SCRIPT src="https://java.com/js/dtjava.js"></SCRIPT><script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Aspirateur.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IkFzcGlyYXRldXIuam5scCI+DQogICAgPGluZm9ybWF0aW9uPg0KICAgICAgICA8dGl0bGU+QXNwaXJhdGV1cjwvdGl0bGU+DQogICAgICAgIDx2ZW5kb3I+TkFUSEFOPC92ZW5kb3I+DQogICAgICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICAgICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogICAgPC9pbmZvcm1hdGlvbj4NCiAgICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCiAgICA8cmVzb3VyY2VzPg0KICAgICAgICA8ajJzZSB2ZXJzaW9uPSI5LjAuMSsiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4NCiAgICAgICAgPGphciBocmVmPSJBc3BpcmF0ZXVyLmphciIgc2l6ZT0iODQwMDMiIGRvd25sb2FkPSJlYWdlciIvPg0KICAgIDwvcmVzb3VyY2VzPg0KICAgIDxqZng6amF2YWZ4LWRlc2Mgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImFzcGlyYXRldXIuQXNwaXJhdGV1ciIgbmFtZT0iQXNwaXJhdGV1ciIvPg0KPC9qbmxwPg0KDQo='
+            },
+            {
+                javafx : '9.0.1+'
+            },
+            {}
+        );
+        return false;
+    }
+</script><script>
+    function javafxEmbedaspirateur() {
+        dtjava.embed(
+            {
+                id : 'aspirateur',
+                url : 'Aspirateur.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48am5scCBzcGVjPSIxLjAiIHhtbG5zOmpmeD0iaHR0cDovL2phdmFmeC5jb20iIGhyZWY9IkFzcGlyYXRldXIuam5scCI+DQogICAgPGluZm9ybWF0aW9uPg0KICAgICAgICA8dGl0bGU+QXNwaXJhdGV1cjwvdGl0bGU+DQogICAgICAgIDx2ZW5kb3I+TkFUSEFOPC92ZW5kb3I+DQogICAgICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICAgICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogICAgPC9pbmZvcm1hdGlvbj4NCiAgICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCiAgICA8cmVzb3VyY2VzPg0KICAgICAgICA8ajJzZSB2ZXJzaW9uPSI5LjAuMSsiIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4NCiAgICAgICAgPGphciBocmVmPSJBc3BpcmF0ZXVyLmphciIgc2l6ZT0iODQwMDMiIGRvd25sb2FkPSJlYWdlciIvPg0KICAgIDwvcmVzb3VyY2VzPg0KICAgIDxqZng6amF2YWZ4LWRlc2Mgd2lkdGg9IjgwMCIgaGVpZ2h0PSI2MDAiIG1haW4tY2xhc3M9ImFzcGlyYXRldXIuQXNwaXJhdGV1ciIgbmFtZT0iQXNwaXJhdGV1ciIvPg0KPC9qbmxwPg0KDQo='
+            },
+            {
+                javafx : '9.0.1+'
+            },
+            {}
+        );
+    }
+    
+            <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedaspirateur);
+</script>
+    </head>
+    <body>
+        <h2>
+            Test page for <b>Aspirateur</b>
+        </h2>
+        <b>Webstart:</b><a href="Aspirateur.jnlp" onclick="return launchApplication('Aspirateur.jnlp');">click to launch this app as webstart</a>
+        <br>
+        <hr>
+        <br>
+        
+        <!-- Applet will be inserted here -->
+        <div id="javafx-app-placeholder"></div>
+    </body>
+</html>
